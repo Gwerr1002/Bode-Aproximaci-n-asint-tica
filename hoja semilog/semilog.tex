@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{lscape}
+\usepackage{pgfplots}
+
+\usepackage{geometry}     
+\geometry{
+ letterpaper,
+% total={170mm,257mm},
+ left=0.5cm,
+ right = 0.5cm,
+ top=0.5cm,
+ bottom = 0.5cm
+ }
+
+\pagestyle{empty}
+
+\pgfplotsset{width=27.5cm,height=21.5cm,compat=1.9}
+
+\begin{document}
+\begin{landscape}
+\begin{tikzpicture}
+  \begin{semilogxaxis}[
+    xmin=1, xmax=10000000000,
+    xticklabels={},
+    yticklabels={},
+    ymin=0,ymax=10,
+    grid=both]
+  \end{semilogxaxis}
+\end{tikzpicture}
+\end{landscape}
+\end{document}
